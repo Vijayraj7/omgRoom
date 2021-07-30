@@ -1,0 +1,168 @@
+<!-- <?php
+
+
+$clans = array();
+
+$clans = [ 'TRz' ,
+           'EL DORADO',
+           'TEAM RAGE',
+           'PIRATES',
+           'b12 GAMING',
+           'AGENT 46',
+           'MALLU PIRATES',
+           'XD',
+           'XD',
+           'MMC ESPORTS',
+           'RG ESPORTS',
+           'CBA',
+           'BULLET',
+           'WEST SEVEN',
+           'KANDAM BATTLE',
+           'TeamRGesports',
+           'WZ',
+           'KGF',
+           'Saint eSports',
+           'Lord of guns',
+           'VORTEX ESPORTS',
+           'ROG',
+           'DMEN',
+           'OMG',
+           'OMG 2',
+        ];
+
+
+
+
+?> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <nav>
+        <div id="nav">
+            <div id="logo">
+                <div id="logocircle">
+
+                    <img src="omg.jpg" height="50px" width="50px">
+
+                </div>
+            </div>
+            <div id="logoname">
+                <h1>ØMG丨DAILY ROOM MATCH⚔️</h1>
+            </div>
+        </div>
+    </nav>
+    <section>
+
+        <div id="pName">
+
+            <h1>POINT TABLE</h1>
+
+        </div>
+
+
+        <div id="ptablediv">
+
+
+            <div id="ptable">
+                <table id="mani">
+                    <tr id="head">
+                        <th>SLOT</th>
+                        <th>NAME</th>
+                        <th>MP</th>
+                        <th>KP</th>
+                        <th>TOTAL</th>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+    <div id="foots"></div>
+    <div id="footer">
+
+        <h1>
+            TEAM OMG
+        </h1>
+
+    </div>
+
+</body>
+<script>
+
+
+
+    let items = [
+        'TRz',
+        'EL DORADO',
+        'TEAM RAGE',
+        'PIRATES',
+        'b12 GAMING',
+        'AGENT 46',
+        'MALLU PIRATES',
+        'XD',
+        'XD',
+        'MMC ESPORTS',
+        'RG ESPORTS',
+        'CBA',
+        'BULLET',
+        'WEST SEVEN',
+        'KANDAM BATTLE',
+        'TeamRGesports',
+        'WZ',
+        'KGF',
+        'Saint eSports',
+        'Lord of guns',
+        'VORTEX ESPORTS',
+        'ROG',
+        'DMEN',
+        'OMG',
+        'OMG 2'
+    ];
+
+    for (let index = 0; index < items.length; index++) {
+
+        tr = document.createElement('tr');
+
+        document.getElementById('mani').appendChild(tr);
+        tr.classList.add('contents');
+        let td1 = document.createElement('td');
+        let td2 = document.createElement('td');
+        let td3 = document.createElement('td');
+        let td4 = document.createElement('td');
+        let td5 = document.createElement('td');
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        tr.appendChild(td3);
+        tr.appendChild(td4);
+        tr.appendChild(td5);
+
+        td1.innerText = index + 1;
+        td2.innerText = items[index];
+        td3.innerText = '0';
+        td4.innerText = '0';
+        td5.innerText = '0';
+
+    }
+
+</script>
+
+</html>
