@@ -43,7 +43,7 @@ $clans = [ 'TRz' ,
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OMG ROOM</title>
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -61,21 +61,25 @@ $clans = [ 'TRz' ,
                 <h1>ØMG丨DAILY ROOM MATCH⚔️</h1>
             </div>
         </div>
-    </nav>
-    <section>
-
-        <div id="pName">
+        <div id="pName" class="pNam">
 
             <h1>POINT TABLE</h1>
 
         </div>
+    </nav>
+    <section>
 
+
+      
 
         <div id="ptablediv">
 
 
             <div id="ptable">
                 <table id="mani">
+                    <caption>
+
+                    </caption>
                     <tr id="head">
                         <th>SLOT</th>
                         <th>NAME</th>
@@ -107,8 +111,18 @@ $clans = [ 'TRz' ,
 </body>
 <script>
 
-
-
+    window.onscroll = function (ev) {
+        console.log(window.scrollY);
+        if (window.scrollY > 0) {
+            document.getElementById('pName').classList.add('pns');
+            // document.getElementById('pName').style.margin = '0px';
+            // document.getElementById('pName').style.width = '100%';
+        } else {
+            document.getElementById('pName').classList.remove('pns');
+            // document.getElementById('pName').style.margin = '50px';
+            // document.getElementById('pName').style.width = 'calc(100% - 100px)';
+        }
+    };
     let items = [
         'TRz',
         'EL DORADO',
@@ -143,6 +157,13 @@ $clans = [ 'TRz' ,
 
         document.getElementById('mani').appendChild(tr);
         tr.classList.add('contents');
+        tr.onclick = function () {
+            if (this.classList[1] == null) {
+                this.classList.add('showclandetail');
+            } else {
+                this.classList.remove('showclandetail');
+            }
+        }
         let td1 = document.createElement('td');
         let td2 = document.createElement('td');
         let td3 = document.createElement('td');
@@ -162,7 +183,10 @@ $clans = [ 'TRz' ,
         td5.innerText = '0';
 
     }
-
+    function tdClick() {
+        alert('ggg');
+    }
+    document.getElementById('#head').click = tdClick;
 </script>
 
 </html>
