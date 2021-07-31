@@ -15,6 +15,7 @@ nav {
     background-color: rgba(240, 240, 240, 0.8);
     backdrop-filter: blur(4px);
 }
+
 #logo {
     margin-right: 10px;
     margin-left: 20px;
@@ -45,17 +46,33 @@ img {
     font-size: calc(100% * 1);
 }
 
-#pName {
-    width: 100%;
-    height: 100px;
-    margin-top: 10px;
+.pNam {
+    padding: 5px;
+    width: calc(100% - 70px);
+    margin: 35px;
+    height: 80px;
     background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
 }
 
-#pName h1 {
+@keyframes changeBackgroundColor {
+    0% {
+        color: #26061c;
+    }
+    50% {
+        color: whitesmoke;
+    }
+    100% {
+        color: #26061c;
+    }
+}
+
+.pNam h1 {
+    transition: 0.5s;
     color: white;
     font-size: 40px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -64,7 +81,6 @@ img {
 #ptablediv {
     width: calc(100% - 20px);
     margin: 10px;
-    margin-top: 36px;
 }
 
 #ptable {
@@ -93,6 +109,7 @@ img {
     padding: 10px;
     border-radius: 20px;
     text-align: center;
+    transition: 0.4s ease-in-out;
 }
 
 .contents td {
@@ -140,7 +157,21 @@ table tr td:last-child {
     justify-content: center;
     align-items: center;
 }
-#footer h1{
+
+#footer h1 {
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.showclandetail{
+    height: 200px;
+}
+.pns{
+   margin: 0px;
+   width: 100%;
+   height: 35px;
+   background-color: grey;
+   border-radius: 0px;
+}
+.pns h1{
+   font-size: 20px;
 }
