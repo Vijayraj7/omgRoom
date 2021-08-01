@@ -107,36 +107,34 @@
             document.getElementById('pName').classList.remove('pns');
         }
     };
+    let s1clans =
+        [   
+            'CBA',
+            'KANDAM',
+            'teamRGesports',
+            'PIRATES',
+            'Dolphin',
+            'AGENT66',
+            'TEAM BRS',
+            'VORTEX ESPORTS',
+            'BEAST 12 OFFICIAL',
+            'MALLU PIRATES',
+            'Lord of guns',
+            'HYD  OFFICIALS',
+            'Saint eSports',
+            'FORCE X',
+            'WZ',
+            'Zealous',
+            'SaintN',
+            'zyko',
+            'RAGE',
+            'ROG',
+            'DMEN',
+            'OMG',
+            'OMG 2'
+        ];
 
-    let items = [
-        'TRz',
-        'EL DORADO',
-        'TEAM RAGE',
-        'PIRATES',
-        'b12 GAMING',
-        'AGENT 46',
-        'MALLU PIRATES',
-        'XD',
-        'XD',
-        'MMC ESPORTS',
-        'RG ESPORTS',
-        'CBA',
-        'BULLET',
-        'WEST SEVEN',
-        'KANDAM BATTLE',
-        'TeamRGesports',
-        'WZ',
-        'KGF',
-        'Saint eSports',
-        'Lord of guns',
-        'VORTEX ESPORTS',
-        'ROG',
-        'DMEN',
-        'OMG',
-        'OMG 2'
-    ];
-
-    for (let index = 0; index < items.length; index++) {
+    for (let index = 0; index < s1clans.length; index++) {
 
         tr = document.createElement('tr');
 
@@ -159,7 +157,7 @@
         tr.appendChild(td7);
 
         td1.innerText = index + 1;
-        td2.innerText = items[index];
+        td2.innerText = s1clans[index];
         td3.innerText = '0';
         td4.innerText = '0';
         td5.innerText = '0';
