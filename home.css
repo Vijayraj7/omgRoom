@@ -62,8 +62,8 @@ img {
 }
 
 #ptablediv {
-    width: calc(100% - 20px);
-    margin: 10px;
+    width: calc(100% - 60px);
+    margin: 30px;
     margin-top: 36px;
 }
 
@@ -72,7 +72,9 @@ img {
 }
 
 #head {
-    background-color: rgba(240, 240, 240);
+  
+     background-color: rgba(211, 211, 211, 0.8);
+    backdrop-filter: blur(4px);
     padding: 10px;
     text-align: center;
     position: sticky;
@@ -142,4 +144,55 @@ table tr td:last-child {
 #footer h1{
     color: white;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#btnc{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    outline:none;
+    background-color: #247bff;
+    padding: 10px;
+    position: center;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#btn:active{
+    background-color: grey;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+#btng{
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    outline:none;
+    background-color: green;
+    padding: 10px;
+    position: center;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#btng:active{
+    background-color: grey;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:active{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: white;
+    text-decoration: none;
 }
