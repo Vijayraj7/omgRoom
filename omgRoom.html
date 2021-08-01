@@ -42,7 +42,6 @@
 
             </div>
 
-
             <div id="ptablediv">
 
 
@@ -74,16 +73,22 @@
     </div>
     <div id="btnc">
         <button id="btn" class="downloadtable" onclick="downloadtable()">DOWNLOAD</button>
-        <button id="btng" ><a href="https://chat.whatsapp.com/L7vPazGI4KZGTSWBPPabtI">JOIN</a></button>
+        <button id="btng"><a href="https://chat.whatsapp.com/L7vPazGI4KZGTSWBPPabtI">JOIN</a></button>
     </div>
-        <div id="foots"></div>
-        <div id="footer">
+    <div id="foots"></div>
+    <div id="footer">
 
-            <h1>
-                TEAM OMG
-            </h1>
+        <h1>
+            TEAM OMG
+        </h1>
 
-        </div>
+    </div>
+
+            <div id="bestp">
+                <h5>BEST PLAYER</h5>
+                <h4>︻デ═一一  </h4>
+                <h3>B12xLitMAXYT</h3>
+            </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -94,21 +99,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </body>
 
 <script>
-
-
-    window.onscroll = function (ev) {
-        console.log(window.scrollY);
-        if (window.scrollY > 0) {
-            document.getElementById('pName').classList.add('pns');
-        } else {
-            document.getElementById('pName').classList.remove('pns');
-        }
+    var s1players = {
+        "f": ""
     };
     let s1clans =
-        [   
+        [
             'CBA',
             'KANDAM',
             'teamRGesports',
@@ -120,7 +119,7 @@
             'BEAST 12 OFFICIAL',
             'MALLU PIRATES',
             'Lord of guns',
-            'HYD  OFFICIALS',
+            'HYD OFFICIALS',
             'Saint eSports',
             'FORCE X',
             'WZ',
@@ -134,37 +133,274 @@
             'OMG 2'
         ];
 
-    for (let index = 0; index < s1clans.length; index++) {
+    var s1results =
+        [
+            //1
+            {
+                "clan": 'CBA',
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "4",
+                "KILLPOINTS": "4",
+                "TOTAL": "8"
+            },
+            //2
+            {
+                "clan": "KANDAM",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //3
+            {
+                "clan": "teamRGesports",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //4
+
+            {
+                "clan": "PIRATES",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "2",
+                "KILLPOINTS": "8",
+                "TOTAL": "10"
+            },
+            //5
+            {
+                "clan": "Dolphin",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "5",
+                "KILLPOINTS": "6",
+                "TOTAL": "11"
+            },
+            //6
+            {
+                "clan": "AGENT66",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "2",
+                "TOTAL": "2"
+            },
+            //7
+            {
+                "clan": "TEAM BRS",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "1",
+                "KILLPOINTS": "8",
+                "TOTAL": "9"
+            },
+            //8
+            {
+                "clan": "VORTEX ESPORTS",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //10
+            {
+                "clan": "BEAST 12 OFFICIAL",
+                "MatchesPlayed": "1",
+                "WIN": "1",
+                "PLACEPOINTS": "10",
+                "KILLPOINTS": "44",
+                "TOTAL": "54"
+            },
+            //      //11
+            {
+                "clan": "MALLU PIRATES",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //      //12
+            {
+                "clan": "Lord of guns",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "9",
+                "KILLPOINTS": "14",
+                "TOTAL": "23"
+            },
+            //13
+            {
+                "clan": "HYD OFFICIALS",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //14
+            {
+                "clan": "Saint eSports",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //15
+            {
+                "clan": "FORCE X",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "6",
+                "KILLPOINTS": "0",
+                "TOTAL": "6"
+            },
+            //17
+            {
+                "clan": "WZ",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "8",
+                "KILLPOINTS": "2",
+                "TOTAL": "11"
+            },
+            //18
+            {
+                "clan": "Zealous",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //19
+            {
+                "clan": "SaintN",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //20
+            {
+                "clan": "zyko",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "2",
+                "TOTAL": "2"
+            },
+            //21
+            {
+                "clan": "RAGE",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "2",
+                "TOTAL": "2"
+            },
+            //22
+            {
+                "clan": "ROG",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "7",
+                "KILLPOINTS": "14",
+                "TOTAL": "21"
+            },
+            //23
+            {
+                "clan": "DMEN",
+
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "2",
+                "TOTAL": "2"
+            },
+            //24
+            {
+                "clan": "OMG",
+                "MatchesPlayed": "1",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+            //25
+            {
+                "clan": "OMG 2",
+                "MatchesPlayed": "0",
+                "WIN": "0",
+                "PLACEPOINTS": "0",
+                "KILLPOINTS": "0",
+                "TOTAL": "0"
+            },
+
+        ];
+
+
+</script>
+
+<script>
+    s1results.sort(function (a, b) {
+        return b.TOTAL - a.TOTAL;
+    });
+
+
+    window.onscroll = function (ev) {
+        if (window.scrollY > 0) {
+            document.getElementById('bestp').style.visibility = 'hidden';
+        } else {
+            document.getElementById('bestp').style.visibility = 'visible';
+        }
+    };
+
+
+    for (let index = 0; index < s1results.length; index++) {
 
         tr = document.createElement('tr');
 
         document.getElementById('mani').appendChild(tr);
         tr.classList.add('contents');
-        let td1 = document.createElement('td');
-        let td2 = document.createElement('td');
-        let td3 = document.createElement('td');
-        let td4 = document.createElement('td');
-        let td5 = document.createElement('td');
-        let td6 = document.createElement('td');
-        let td7 = document.createElement('td');
+        let r = document.createElement('td');
+        let c = document.createElement('td');
+        let m = document.createElement('td');
+        let w = document.createElement('td');
+        let p = document.createElement('td');
+        let k = document.createElement('td');
+        let t = document.createElement('td');
 
-        tr.appendChild(td1);
-        tr.appendChild(td2);
-        tr.appendChild(td3);
-        tr.appendChild(td4);
-        tr.appendChild(td5);
-        tr.appendChild(td6);
-        tr.appendChild(td7);
+        tr.appendChild(r);
+        tr.appendChild(c);
+        tr.appendChild(m);
+        tr.appendChild(w);
+        tr.appendChild(p);
+        tr.appendChild(k);
+        tr.appendChild(t);
+if(index == 0){
+    r.innerText = '👑';
+}else{
+        r.innerText = index + 1;
+}
+        c.innerText = s1results[index]['clan'];
+        m.innerText = s1results[index]['MatchesPlayed'] == '0' ? '' : s1results[index]['MatchesPlayed'];
+        w.innerText = s1results[index]['WIN'] == '0' ? '' : s1results[index]['WIN'];
+        p.innerText = s1results[index]['PLACEPOINTS'] == '0' ? '' : s1results[index]['PLACEPOINTS'];
+        k.innerText = s1results[index]['KILLPOINTS'] == '0' ? '' : s1results[index]['KILLPOINTS'];
+        t.innerText = s1results[index]['TOTAL'];
+        t.style.color = 'green';
+        t.style.fontWeight = 'bold';
 
-        td1.innerText = index + 1;
-        td2.innerText = s1clans[index];
-        td3.innerText = '0';
-        td4.innerText = '0';
-        td5.innerText = '0';
-        td6.innerText = '0';
-        td7.innerText = '0';
-        td7.style.color = 'green';
-        td7.style.fontWeight = 'bold';
+        tr.id = 's' + index.toString();
 
     }
 
@@ -197,7 +433,19 @@
         document.body.removeChild(link);
         delete link;
     }
-
+    function sortTable(table, col, reverse) {
+        var tb = table.tBodies[0], // use `<tbody>` to ignore `<thead>` and `<tfoot>` rows
+            tr = Array.prototype.slice.call(tb.rows, 0), // put rows into array
+            i;
+        reverse = -((+reverse) || -1);
+        tr = tr.sort(function (a, b) { // sort rows
+            return reverse // `-1 *` if want opposite order
+                * (a.cells[col].textContent.trim() // using `.textContent.trim()` for test
+                    .localeCompare(b.cells[col].textContent.trim())
+                );
+        });
+        for (i = 0; i < tr.length; ++i) tb.appendChild(tr[i]); // append each row in order
+    }
 
 
 </script>
