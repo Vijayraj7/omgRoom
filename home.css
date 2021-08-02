@@ -129,11 +129,13 @@ table tr td:last-child {
         justify-content: flex-start;
     }
 #bestp h4{
-font-size : 60%;
-}#bestp h5{
-font-size : 60%;
-}#bestp h3{
-font-size : 65%;
+font-size: 60%;
+}
+#bestp h5{
+font-size: 60%;
+}
+#bestp h3{
+font-size: 65%;
 }
 }
 
