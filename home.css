@@ -128,15 +128,15 @@ table tr td:last-child {
     #nav {
         justify-content: flex-start;
     }
-#bestp h4{
-font-size: 60%;
-}
-#bestp h5{
-font-size: 60%;
-}
-#bestp h3{
-font-size: 65%;
-}
+    #bestp h4 {
+        font-size: 60%;
+    }
+    #bestp h5 {
+        font-size: 60%;
+    }
+    #bestp h3 {
+        font-size: 65%;
+    }
 }
 
 #foots {
@@ -218,30 +218,43 @@ a:hover {
 
 #s0 {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}#s0 td{
-color: white;
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
-#s1{
-background-color: #3878ff;
+
+#s0 td {
+    color: white;
 }
-#s2{
+
+#s1 td {
+    color: white;
+}
+
+#s2 td {
+    color: white;
+}
+
+#s1 {
+    background-color: #3878ff;
+}
+
+#s2 {
     background-color: #91b5ff;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
-#bestp{
+
+#bestp {
     position: fixed;
     bottom: 0;
     padding-top: 4px;
@@ -253,21 +266,24 @@ background-color: #3878ff;
     align-items: center;
     display: visible;
 }
-#bestp h4{
+
+#bestp h4 {
     margin-right: 10px;
     margin-left: 10px;
     color: wheat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 140%;
 }
-#bestp h5{
+
+#bestp h5 {
     margin-right: 7px;
     margin-left: 10px;
     color: wheat;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 100%;
 }
-#bestp h3{
+
+#bestp h3 {
     margin-right: 7px;
     font-size: 125%;
     color: white;
