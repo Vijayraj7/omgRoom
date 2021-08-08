@@ -94,9 +94,9 @@
     </div>
 
     <div id="bestp">
-        <h5>MVP</h5>
+        <h5>BEST PLAYER</h5>
         <h4>︻デ═一</h4>
-        <h3>B12xROWDyFTW</h3>
+        <h3>DMENMacrOcrd</h3>
     </div>
 
 
@@ -104,17 +104,23 @@
 
 
         <div id="firstdid">
-            <div><h3>1</h3></div>
-            <h3>BEAST 12 OFFICIAL</h3>
-        </div>
-
-        <div id="seconddid">
-            <div><h3>2</h3></div>
+            <div>
+                <h3>1</h3>
+            </div>
             <h3>DMEN</h3>
         </div>
 
+        <div id="seconddid">
+            <div>
+                <h3>2</h3>
+            </div>
+            <h3>BEAST 12 OFFICIAL</h3>
+        </div>
+
         <div id="thirdid">
-            <div><h3>3</h3></div>
+            <div>
+                <h3>3</h3>
+            </div>
             <h3>OMG</h3>
         </div>
 
@@ -145,6 +151,7 @@
 
     var listsofresults = Array();
 
+
     listsofresults.push(s1resultsday1);
     listsofresults.push(s1resultsday2);
     listsofresults.push(s1resultsday3);
@@ -153,6 +160,7 @@
     listsofresults.push(s1resultsday6);
 
     listsofresults.forEach(function (results, index, array) {
+
         for (let i = 0; i < s1results.length; i++) {
             s1results[i].MatchesPlayed = parseInt(s1results[i].MatchesPlayed) + parseInt(results[i].MatchesPlayed);
             s1results[i].WIN = parseInt(s1results[i].WIN) + parseInt(results[i].WIN);
