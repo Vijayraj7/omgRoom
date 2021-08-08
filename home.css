@@ -332,7 +332,8 @@ a:hover {
 }
 
 #winnercont #firstdid h3 {
-    margin: 25px;
+    margin-left: 75px;
+    margin-right: 55px;
     color: white;
     background-size: 400% 400%;
     animation: c 4s ease infinite;
