@@ -217,9 +217,7 @@ a:hover {
 }
 
 #s0 {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-color: #185749;
 }
 
 #s0 td {
@@ -235,11 +233,11 @@ a:hover {
 }
 
 #s1 {
-    background-color: #3878ff;
+    background-color: #00b08a;
 }
 
 #s2 {
-    background-color: #91b5ff;
+    background-color: #70ffe0;
 }
 
 @keyframes gradient {
@@ -287,5 +285,150 @@ a:hover {
     margin-right: 7px;
     font-size: 125%;
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#winnercont {
+    position: fixed;
+    top: 150px;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#winnercont #firstdid {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    background: linear-gradient(-45deg,  gold,red, goldenrod, yellow);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(240, 240, 240, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+#winnercont #firstdid div {
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: gold;
+    border-radius: 50px;
+}
+
+#winnercont #firstdid div h3 {
+    color: white;
+    margin: 25px;
+}
+
+#winnercont #firstdid h3 {
+    margin: 25px;
+    color: white;
+    background-size: 400% 400%;
+    animation: c 4s ease infinite;
+    font-size: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#winnercont #seconddid {  
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    background: linear-gradient(-45deg, #cc1da3,#7d0060,#ff00c3,#ff24cc);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(240, 240, 240, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+#winnercont #seconddid div {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: silver;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#winnercont #seconddid div h3 {
+    margin: 20px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#winnercont #seconddid h3 {
+    color: white;
+    background-size: 400% 400%;
+    animation: c 4s ease infinite;
+    margin: 20px;
+    font-size: 78%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@keyframes c{
+    0%{color: black;
+    }50%{
+        color: white;
+    }100%{
+        color: black;
+    }
+}
+#winnercont #thirdid {
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+    background: linear-gradient(-45deg, #3b2fe0,#1e21c9,#4f42ff,#7a70ff);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(240, 240, 240, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+#winnercont #thirdid div {
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    background-color: #ee7752;
+    border-radius: 50px;
+}
+
+#winnercont #thirdid div h3 {
+    margin: 10px;
+    color: white;
+}
+
+#winnercont #thirdid h3 {
+    margin: 15px;
+    color: white;
+    background-size: 400% 400%;
+    animation: c 4s ease infinite;
+    font-size: 75%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
